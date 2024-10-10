@@ -6,7 +6,10 @@
 
    
 UserParameter=cpu.discovery,/usr/local/bin/discover_cpu_temp.sh
+
 UserParameter=cpu.temperature[*],sysctl -n dev.cpu.$1.temperature
+
 UserParameter=sensor.discovery,/usr/local/bin/discover_sensor_temp.sh
+
 UserParameter=sensor.temperature[*],sysctl -n hw.acpi.thermal.tz$1.temperature
 
