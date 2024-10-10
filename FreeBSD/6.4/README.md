@@ -1,5 +1,5 @@
-Monitoring temperature on Freebsd with Zabbix agent 6.4
-BAsed on official template: https://www.zabbix.com/ru/integrations/freebsd
+!Monitoring temperature on Freebsd with Zabbix agent 6.4
+Bsed on official template: https://www.zabbix.com/ru/integrations/freebsd
 
 1. Put "discover_cpu_temp.sh" to "/usr/local/bin/discover_cpu_temp.sh"
 2. Put "discover_sensor_temp.sh" to "/usr/local/bin/discover_sensor_temp.sh"
