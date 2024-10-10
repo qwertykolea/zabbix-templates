@@ -3,6 +3,8 @@
 3. chmod +x /usr/local/bin/discover_cpu_temp.sh
 4. chmod +x /usr/local/bin/discover_sensor_temp.sh
 5. Add to Zabbix agent Advanced Features section:
+
+   
 UserParameter=cpu.discovery,/usr/local/bin/discover_cpu_temp.sh
 UserParameter=cpu.temperature[*],sysctl -n dev.cpu.$1.temperature
 UserParameter=sensor.discovery,/usr/local/bin/discover_sensor_temp.sh
