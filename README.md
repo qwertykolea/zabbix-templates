@@ -1,2 +1,2 @@
-# zabbix-templates
-Zabbix Templates 
+# Zabbix templates
+Templates for Zabbix
