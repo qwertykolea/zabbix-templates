@@ -5,6 +5,7 @@ Based on official template: https://www.zabbix.com/ru/integrations/freebsd
 1. Adding temperature monitoring:
    * Intel CPU: kldload coretemp
    * AMD CPU: kldload amdtemp.ko
+
 Add to "/boot/loader.conf" string: coretemp_load=»YES»
 2. Put "discover_cpu_temp.sh" to "/usr/local/bin/discover_cpu_temp.sh"
 3. Put "discover_sensor_temp.sh" to "/usr/local/bin/discover_sensor_temp.sh"
