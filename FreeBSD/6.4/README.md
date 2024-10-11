@@ -27,8 +27,3 @@ UserParameter=sensor.discovery,/usr/local/bin/discover_sensor_temp.sh
 UserParameter=sensor.temperature[*],sysctl -n hw.acpi.thermal.tz$1.temperature
 
 7. Restart Zabbix agent service
-
-   
-
-
-coretemp_load="YES"
