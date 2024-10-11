@@ -7,11 +7,16 @@ Based on official template: https://www.zabbix.com/ru/integrations/freebsd
    * AMD CPU: kldload amdtemp.ko
 
 Add to "/boot/loader.conf" string: coretemp_load=»YES»
+
 2. Put "discover_cpu_temp.sh" to "/usr/local/bin/discover_cpu_temp.sh"
-3. Put "discover_sensor_temp.sh" to "/usr/local/bin/discover_sensor_temp.sh"
-4. chmod +x /usr/local/bin/discover_cpu_temp.sh
-5. chmod +x /usr/local/bin/discover_sensor_temp.sh
-6. Add to Zabbix agent Advanced Features section:
+   
+4. Put "discover_sensor_temp.sh" to "/usr/local/bin/discover_sensor_temp.sh"
+   
+6. chmod +x /usr/local/bin/discover_cpu_temp.sh
+   
+8. chmod +x /usr/local/bin/discover_sensor_temp.sh
+   
+10. Add to Zabbix agent Advanced Features section:
 
 UserParameter=cpu.discovery,/usr/local/bin/discover_cpu_temp.sh
 
