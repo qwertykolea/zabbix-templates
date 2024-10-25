@@ -6,7 +6,7 @@ Based on official template: https://www.zabbix.com/ru/integrations/freebsd
    * Intel CPU: kldload coretemp
    * AMD CPU: kldload amdtemp.ko
 
-Add to "/boot/loader.conf" string: coretemp_load=»YES»
+Add to "/boot/loader.conf" string: coretemp_load="YES"
 
 2. Put "discover_cpu_temp.sh" to "/usr/local/bin/discover_cpu_temp.sh"
    
